@@ -1,0 +1,602 @@
+<html>
+
+<head>
+    <title>Acrobatics (Dex; Armor Check Penalty)</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/foundation.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+<body>
+    <h1>Acrobatics (Dex; Armor Check Penalty)</h1>
+    <p>You can keep your balance while traversing narrow or treacherous surfaces. You can also dive, flip, jump, and roll, avoiding
+        attacks and confusing your opponents.</p>
+    <p>
+        <a name="acrobatics-modifiers"></a>
+    </p>
+    <p>The following modifiers apply to all Acrobatics skill checks. The modifiers stack with one another, but only the most
+        severe modifier for any given condition applies.</p>
+    <p>
+        <a name="table-acrobatics-modifiers"></a>
+    </p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Misc. Acrobatics Modifiers</caption>
+            <thead>
+                <tr>
+                    <th style="text-align: center">Acrobatics Modifiers</th>
+                    <th style="text-align: center">DC Modifier</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text">Lightly Obstructed (gravel, sand)</td>
+                    <td class="number" style="text-align: center">+2</td>
+                </tr>
+                <tr>
+                    <td class="text">Severely Obstructed (cavern, rubble)</td>
+                    <td class="number" style="text-align: center">+5</td>
+                </tr>
+                <tr>
+                    <td class="text">Slightly Slippery (wet)</td>
+                    <td class="number" style="text-align: center">+2</td>
+                </tr>
+                <tr>
+                    <td class="text">Severely Slippery (icy)</td>
+                    <td class="number" style="text-align: center">+5</td>
+                </tr>
+                <tr>
+                    <td class="text">Slightly Sloped (&lt;45°)</td>
+                    <td class="number" style="text-align: center">+2</td>
+                </tr>
+                <tr>
+                    <td class="text">Severely Sloped (&gt;45°)</td>
+                    <td class="number" style="text-align: center">+5</td>
+                </tr>
+                <tr>
+                    <td class="text">Slightly Unsteady (boat in rough water)</td>
+                    <td class="number" style="text-align: center">+2</td>
+                </tr>
+                <tr>
+                    <td class="text">Mildly Unsteady (boat in a storm)</td>
+                    <td class="number" style="text-align: center">+5</td>
+                </tr>
+                <tr>
+                    <td class="text">Severely Unsteady (earthquake)</td>
+                    <td class="number" style="text-align: center">+10</td>
+                </tr>
+                <tr>
+                    <td class="text">Move at full speed on narrow or uneven surfaces</td>
+                    <td style="text-align: center">+5
+                        <sup style="font-size: 10px">1</sup>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 12px">
+            <sup style="font-size: 10px">1</sup> This does not apply to checks made to jump.</p>
+    </div>
+    <h3>
+        <a name="TOC-Common-Uses"></a>Common Uses</h3>
+    <p>The Acrobatics skill has three distinct uses:</p>
+    <ol>
+        <li>
+            <a href="#cross-narrow-surface">Cross Narrow Surfaces/Uneven Ground</a>
+        </li>
+        <li>
+            <a href="#move-through-threatened-area">Move Through Threatened Squares</a>
+        </li>
+        <li>
+            <a href="#jumping-and-falling">Jumping and Falling</a>
+        </li>
+    </ol>
+    <p>
+        <a name="cross-narrow-surface"></a>
+    </p>
+    <h4>
+        <a name="TOC-Cross-Narrow-Surfaces-Uneven-Ground"></a>Cross Narrow Surfaces/Uneven Ground</h4>
+    <p>First, you can use Acrobatics to move on narrow surfaces and uneven ground without falling. A successful check allows
+        you to move at half speed across such surfaces—only one check is needed per round. Use the following table to determine
+        the base DC, which is then modified by the Acrobatics skill modifiers noted below. While you are using Acrobatics
+        in this way, you are considered
+        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Flat-Footed"> flat-footed</a> and lose your
+        <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-"
+            rel="nofollow">Dexterity</a> bonus to your AC (if any). If you take damage while using Acrobatics, you must immediately make another
+        Acrobatics check at the same DC to avoid falling or being knocked prone.</p>
+    <p>
+        <a name="table-cross-narrow-surface"></a>
+    </p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Acrobatics DC&#8217;s to Cross Narrow Surfaces</caption>
+            <thead>
+                <tr>
+                    <th style="text-align: center">Surface Width</th>
+                    <th style="text-align: center">Base Acrobatics DC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="text-align: center">
+                    <td class="text">Greater than 3 feet wide</td>
+                    <td style="text-align: center">0
+                        <sup style="font-size: 10px">1</sup>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">1–3 feet wide</td>
+                    <td style="text-align: center">5
+                        <sup style="font-size: 10px">1</sup>
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">7–11 inches wide</td>
+                    <td class="number" style="text-align: center">10</td>
+                </tr>
+                <tr>
+                    <td class="text">2–6 inches wide</td>
+                    <td class="number" style="text-align: center">15</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">Less than 2 inches wide</td>
+                    <td class="number">20</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 12px">
+            <sup style="font-size: 10px">1</sup> No Acrobatics check is needed to move across these surfaces unless the modifiers increase the DC to 10
+            or higher.</p>
+    </div>
+    <p style="border-bottom: solid thin;font-weight: bold">Cross Narrow Surface DC Modifiers</p>
+    <ul>
+        <li>
+            <b>Balancing Pole</b>: Using a balancing pole while traversing a narrow surface grants a +1
+            <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> to the Acrobatics check.</li>
+    </ul>
+    <p>
+        <a name="move-through-threatened-area"></a>
+    </p>
+    <h4>
+        <a name="TOC-Move-Through-Threatened-Squares"></a>Move Through Threatened Squares</h4>
+    <p>In addition, you can move through a threatened square without provoking an
+        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity"
+            rel="nofollow">attack of opportunity</a> from an enemy by using Acrobatics. When moving in this way, you move at half speed. You
+        can move at full speed by increasing the DC of the check by 10. You cannot use Acrobatics to move past foes if your
+        speed is reduced due to carrying a medium or heavy load or wearing medium or heavy armor. If an ability allows you
+        to move at full speed under such conditions, you can use Acrobatics to move past foes. You can use Acrobatics in
+        this way while prone, but doing so requires a full-round action to move 5 feet, and the DC is increased by 5. If
+        you attempt to move through an enemy’s space and fail the check, you lose the move action and provoke an attack of
+        opportunity.</p>
+    <p>
+        <a name="table-move-through-threatened-area"></a>
+    </p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Acrobatics DC&#8217;s to Move Through Threatened Areas</caption>
+            <tbody>
+                <tr>
+                    <th style="text-align: center">Situation</th>
+                    <th style="text-align: center">Base Acrobatics DC
+                        <sup style="font-size: 10px">1</sup>
+                    </th>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">Move through a threatened area</td>
+                    <td>Opponent’s
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#35TOC-Combat-Maneuver-Defense" rel="nofollow">Combat Maneuver Defense</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">Move through an enemy’s space</td>
+                    <td>5 + Opponent’s
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#35TOC-Combat-Maneuver-Defense" rel="nofollow">Combat Maneuver Defense</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="font-size: 12px">
+            <sup style="font-size: 10px">1</sup> This DC is used to avoid an attack of opportunity due to movement. This penalty increases by +2 for each
+            additional opponent avoided in one round.</p>
+    </div>
+    <p>
+        <a name="jumping-and-falling"></a>
+    </p>
+    <h4>
+        <a name="TOC-Jumping-and-Falling"></a>Jumping and Falling</h4>
+    <p>Finally, you can use the Acrobatics skill to make jumps or to soften a fall. The base DC to make a jump is equal to the
+        distance to be crossed (if horizontal) or four times the height to be reached (if vertical). These DCs double if
+        you do not have at least 10 feet of space to get a running start. The only Acrobatics modifiers that apply are those
+        concerning the surface you are jumping from. If you fail this check by 4 or less, you can attempt a DC 20
+        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex"
+            rel="nofollow">Reflex</a> save to grab hold of the other side after having missed the jump. If you fail by 5 or more, you fail to
+        make the jump and fall (or land prone, in the case of a vertical jump).</p>
+    <p>
+        <a name="table-jumping-and-falling-long"></a>
+    </p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Acrobatics DC&#8217;s for Long Jumps</caption>
+            <tbody>
+                <tr>
+                    <th style="text-align: center">Long Jump</th>
+                    <th style="text-align: center">Acrobatics DC</th>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">5 feet</td>
+                    <td class="number" style="text-align: center">5</td>
+                </tr>
+                <tr>
+                    <td class="text">10 feet</td>
+                    <td class="number" style="text-align: center">10</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">15 feet</td>
+                    <td class="number" style="text-align: center">15</td>
+                </tr>
+                <tr>
+                    <td class="text">20 feet</td>
+                    <td class="number" style="text-align: center">20</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">Greater than 20 feet</td>
+                    <td class="text" style="text-align: center">+5 per 5 feet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        <a name="table-jumping-and-falling-high"></a>
+    </p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Acrobatics DC&#8217;s for High Jumps</caption>
+            <tbody>
+                <tr>
+                    <th style="text-align: center">High Jump</th>
+                    <th style="text-align: center">Acrobatics DC</th>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">1 foot</td>
+                    <td class="number" style="text-align: center">4</td>
+                </tr>
+                <tr>
+                    <td class="text">2 feet</td>
+                    <td class="number" style="text-align: center">8</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">3 feet</td>
+                    <td class="number" style="text-align: center">12</td>
+                </tr>
+                <tr>
+                    <td class="text">4 feet</td>
+                    <td class="number" style="text-align: center">16</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="text">Greater than 4 feet</td>
+                    <td class="text" style="text-align: center">+4 per foot</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p style="border-bottom: solid thin;font-weight: bold">Jump DC Modifiers</p>
+    <p>
+        <a name="modifiers-faster-movement"></a>
+    </p>
+    <ul>
+        <li>
+            <b>Faster Base Movement</b>: Creatures with a base land speed above 30 feet receive a +4 racial bonus on Acrobatics
+            checks made to jump for every 10 feet of their speed above 30 feet. Creatures with a base land speed below 30
+            feet receive a –4 racial bonus on Acrobatics checks made to jump for every 10 feet of their speed below 30 feet.
+            No jump can allow you to exceed your maximum movement for the round.</li>
+        <li>
+            <b>Running Jump</b>: For a running jump, the result of your Acrobatics check indicates the distance traveled in
+            the jump (and if the check fails, the distance at which you actually land and fall prone). Halve this result
+            for a standing long jump to determine where you land. Also, see Pole.</li>
+        <li>
+            <b>Pole</b>: If you use a pole as part of a running jump, you gain a +2
+            <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Circumstance-Bonus">circumstance bonus</a> on your Acrobatics check (but must let go of the pole in the process).</li>
+        <li>
+            <b>Falling</b>: When you deliberately fall any distance, even as a result of a missed jump, a DC 15 Acrobatics skill
+            check allows you to ignore the first 10 feet fallen, although you still end up prone if you take damage from
+            a fall. See
+            <a href="http://www.d20pfsrd.com/gamemastering/environment/environmental-rules#TOC-Falling">Falling Damage</a> for more details.)</li>
+    </ul>
+    <p style="font-weight: bold;border-bottom: solid thin">Special Situation: Diving or Jumping into Water</p>
+    <p style="font-size: 12px">
+        <b>Source</b>
+        <a href="http://www.opengamingstore.com/products/cerulean-seas-campaign-setting-and-undersea-sourcebook"
+            target="_blank" rel="noopener">Cerulean Seas © 2010 Alluria Publishing. All rights reserved</a>.</p>
+    <p>The rules presented here for diving or jumping into water are from a Pathfinder 3rd Party Publisher and are not part
+        of the Pathfinder Roleplaying Game rules created by Paizo. Consult your GM to see if these rules are allowed or in
+        use in his or her campaign.</p>
+    <p>Characters who jump or dive into water take no damage on a successful DC 15
+        <a href="acrobatics">Acrobatics</a> skill check, so long as the water is at least 10 feet deep for every 30 feet fallen. Water 30 feet
+        deep is sufficient for a dive from any height. However, the DC of the check increases by 5 for every 50 feet of the
+        dive.
+        <b>Table: Diving</b> summarizes these rules.</p>
+    <p>If the water is not deep enough for a safe dive, add 5 to the DC and treat your dive or fall as 30 feet higher than its
+        actual height on the
+        <b>Table: Diving</b>.</p>
+    <div style="font-size: 14px">
+        <table border="1" cellpadding="5">
+            <caption style="text-align: left;font-weight: bold;padding: 10px 0px">Table: Diving</caption>
+            <tbody>
+                <tr>
+                    <th style="text-align: center;width: 150px">Dive
+                        <br /> Height</th>
+                    <th style="text-align: center">Minimum
+                        <br /> Safe Depth</th>
+                    <th style="text-align: center">Acrobatics
+                        <br /> DC</th>
+                    <th style="text-align: center">Damage for
+                        <br /> Failed Dive</th>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">10 ft.</td>
+                    <td class="distance" style="text-align: center">10 ft.</td>
+                    <td class="number" style="text-align: center">15</td>
+                    <td class="text" style="text-align: center">None</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">20 ft.</td>
+                    <td class="distance" style="text-align: center">10 ft.</td>
+                    <td class="number" style="text-align: center">15</td>
+                    <td class="text" style="text-align: center">None</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="distance" style="text-align: center">10 ft.</td>
+                    <td class="number" style="text-align: center">15</td>
+                    <td style="text-align: center">1d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">40 ft.</td>
+                    <td class="distance" style="text-align: center">20 ft.</td>
+                    <td class="number" style="text-align: center">15</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a>
+                    </td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">50 ft.</td>
+                    <td class="distance" style="text-align: center">20 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> +1d6</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">60 ft.</td>
+                    <td class="distance" style="text-align: center">20 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 2d6</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">70 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 3d6</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">80 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 4d6</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">90 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 5d6</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">100 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">20</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 6d6</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">110 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">25</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 7d6</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">120 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">25</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 8d6</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">160 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">30</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 12d6</td>
+                </tr>
+                <tr>
+                    <td class="distance" style="text-align: center">210 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">35</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 17d6</td>
+                </tr>
+                <tr style="text-align: center">
+                    <td class="distance" style="text-align: center">240 ft.</td>
+                    <td class="distance" style="text-align: center">30 ft.</td>
+                    <td class="number" style="text-align: center">35</td>
+                    <td style="text-align: center">2d3
+                        <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal</a> + 20d6*</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p style="font-size: 12px">*Maximum falling damage.</p>
+    <p>
+        <b>Action</b>: None. An Acrobatics check is made as part of another action or as a reaction to a situation.</p>
+    <h3>
+        <a name="TOC-Modifiers"></a>Modifiers</h3>
+    <ul>
+        <li>
+            <b>Skills</b> If you have 3 or more ranks in Acrobatics, you gain a +3 dodge bonus to AC when fighting defensively
+            instead of the usual +2, and a +6 dodge bonus to AC when taking the total defense action instead of the usual
+            +4.</li>
+        <li>
+            <b>Feats</b> If you have the
+            <a href="http://www.d20pfsrd.com/feats/general-feats/acrobatic-final">Acrobatic</a> feat, you get a +2 bonus on all Acrobatics checks. If you have 10 or more ranks in Acrobatics,
+            the bonus increases to +4.</li>
+    </ul>
+    <h4>
+        <a name="TOC-Acrobatics-Unchained"></a>Acrobatics Unchained</h4>
+    <p style="font-size: 12px">
+        <b>Source</b>
+        <a title="Pathfinder Unchained" href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6"
+            target="_blank" rel="noopener">PFU</a>
+    </p>
+    <p>
+        <b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses
+        and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access
+        to them with a new feat.</p>
+    <p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill
+        unlocks system interfaces with the
+        <a href="http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the
+        <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p>
+    <p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill.
+        Any character with the
+        <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version
+        of the
+        <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively,
+        you might make skill unlocks a universal part of the game, but you should be aware they add significant power and
+        flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes
+        such as the investigator and
+        <a href="http://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the
+        <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the
+        <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to
+        <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and
+        <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p>
+    <p>With sufficient ranks in Acrobatics, you earn the following.
+        <a name="Unchained-Skill-Unlock"></a>
+    </p>
+    <div style="margin-left: 20px">
+        <p>
+            <b>5 Ranks</b>: You can move at normal speed through a
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Threatened-Squares">threatened</a> square without provoking an
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attack of opportunity</a> by increasing the DC of the check by 5 (instead of by 10). You aren&#8217;t denied
+            your
+            <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus when attempting
+            <a href="acrobatics">Acrobatics</a> checks with DCs of 20 or lower.</p>
+        <p>
+            <b>10 Ranks</b>: You can attempt an
+            <a href="acrobatics">Acrobatics</a> check at a –10 penalty and use the result as your
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Combat-Maneuver-Defense">CMD</a> against
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Trip">trip</a> maneuvers. You can also attempt an
+            <a href="acrobatics">Acrobatics</a> check at a –10 penalty in place of a
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save to avoid falling. You must choose to use this ability before the
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Trip">trip</a> attempt or
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save is rolled. With a successful DC 20
+            <a href="acrobatics">Acrobatics</a> check, you treat an unintentional fall as 10 feet shorter plus 10 feet for every 10 by which you
+            exceed the DC, and treat an intentional fall as 10 feet shorter for every 10 by which you exceed the DC.</p>
+        <p>
+            <b>15 Ranks:</b> You do not provoke
+            <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Attacks-of-Opportunity">attacks of opportunity</a> when standing up from
+            <a href="http://www.d20pfsrd.com/gamemastering/conditions#TOC-Prone">prone</a>.</p>
+        <p>
+            <b>20 Ranks</b>: You double the result of any
+            <a href="acrobatics">Acrobatics</a> check when jumping and never fall
+            <a href="http://www.d20pfsrd.com/gamemastering/conditions#TOC-Prone">prone</a> at the end of a fall as long as you remain conscious.</p>
+    </div>
+    <div>
+        <div>Time Machine!</div>
+        <div style="padding: 10px">
+            <p>The Pathfinder Roleplaying Game merged the Balance and Jump skills from its predecessor into the Acrobatics skill.
+                While this has been mostly good, in the transition some information seems to have been left behind.
+                <b>Note</b>: The information below is
+                <b>NOT</b> from Paizo Publishing, and is
+                <b>NOT</b> official in the least. However, you may find it helpful in some situations to consider how the rules
+                were previously written. Use at your GMs discretion.</p>
+            <h4>
+                <a name="TOC-Long-Jump"></a>Long Jump</h4>
+            <p>A long jump is a horizontal jump, made across a gap like a chasm or stream. At the midpoint of the jump, you
+                attain a vertical height equal to one-quarter of the horizontal distance.</p>
+            <p>If your check succeeds, you land on your feet at the far end. If you fail the check by less than 5, you don’t
+                clear the distance, but you can make a DC 15 Reflex save to grab the far edge of the gap. You end your movement
+                grasping the far edge. If that leaves you dangling over a chasm or gap, getting up requires a move action
+                and a DC 15 Climb check.</p>
+            <h4>
+                <a name="TOC-High-Jump"></a>High Jump</h4>
+            <div style="font-size: 14px">
+                <table border="1" cellpadding="5">
+                    <tbody>
+                        <tr>
+                            <th style="text-align: center">Creature Size</th>
+                            <th style="text-align: center">Vertical Reach</th>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td class="text" style="text-align: center">Colossal</td>
+                            <td class="distance" style="text-align: center">128 ft.</td>
+                        </tr>
+                        <tr>
+                            <td class="text" style="text-align: center">Gargantuan</td>
+                            <td class="distance" style="text-align: center">64 ft.</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td class="text" style="text-align: center">Huge</td>
+                            <td class="distance" style="text-align: center">32 ft.</td>
+                        </tr>
+                        <tr>
+                            <td class="text" style="text-align: center">Large</td>
+                            <td class="distance" style="text-align: center">16 ft.</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td class="text" style="text-align: center">Medium</td>
+                            <td class="distance" style="text-align: center">8 ft.</td>
+                        </tr>
+                        <tr>
+                            <td class="text" style="text-align: center">Small</td>
+                            <td class="distance" style="text-align: center">4 ft.</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td class="text" style="text-align: center">Tiny</td>
+                            <td class="distance" style="text-align: center">2 ft.</td>
+                        </tr>
+                        <tr>
+                            <td class="text" style="text-align: center">Diminutive</td>
+                            <td class="distance" style="text-align: center">1 ft.</td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td class="text" style="text-align: center">Fine</td>
+                            <td class="text" style="text-align: center">½ ft.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>A high jump is a vertical leap made to reach a ledge high above or to grasp something overhead.</p>
+            <p>If you jumped up to grab something, a successful check indicates that you reached the desired height. If you
+                wish to pull yourself up, you can do so with a move action and a DC 15 Climb check. If you fail the Acrobatics
+                check to jump, you do not reach the height, and you land on your feet in the same spot from which you jumped.
+                As with a long jump, the DC is doubled if you do not get a running start of at least 20 feet.</p>
+            <p>Obviously, the difficulty of reaching a given height varies according to the size of the character or creature.
+                The maximum vertical reach (height the creature can reach without jumping) for an average creature of a given
+                size is shown on the table below. (As a Medium creature, a typical human can reach 8 feet without jumping.)</p>
+            <p>Quadrupedal creatures don’t have the same vertical reach as a bipedal creature; treat them as being one size
+                category smaller.</p>
+            <h4>
+                <a name="TOC-Hop-Up"></a>Hop Up</h4>
+            <p>You can jump up onto an object as tall as your waist, such as a table or small boulder, with a DC 10 Acrobatics
+                (jump) check. Doing so counts as 10 feet of movement, so if your speed is 30 feet, you could move 20 feet,
+                then hop up onto a counter. You do not need to get a running start to hop up, so the DC is not doubled if
+                you do not get a running start.</p>
+        </div>
+    </div>
+    <script src="./js/what-input.js"></script>
+    <script src="./js/foundation.js"></script>
+</body>
+
+</html>

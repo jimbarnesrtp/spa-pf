@@ -1,0 +1,239 @@
+<html>
+
+<head>
+    <title>Survival (Wis) </title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/foundation.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+<body>
+    <h1>Survival (Wis) </h1>
+    <p>You are skilled at surviving in the wild and at navigating in the wilderness. You also excel at following trails and tracks left by others.</p> 
+    <p>Several modifiers may apply to the Survival check, as given on <b>Table: Survival DC Modifiers</b>.</p> 
+    <h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+    <h4><a name="TOC-Avoid-Getting-Lost-Avoid-Natural-Hazards"></a>Avoid Getting Lost/Avoid Natural Hazards</h4> 
+    <p>You can use the Survival skill to avoid getting lost or avoid natural hazards and you make a Survival check whenever the situation calls for one.</p> 
+    <p><b>Retry?</b> To avoid getting lost or avoid natural hazards, you make a Survival check whenever the situation calls for one. Retries to avoid getting lost in a specific situation or to avoid a specific natural hazard are not allowed. For finding tracks, you can retry a failed check after 1 hour (outdoors) or 10 minutes (indoors) of searching.</p> 
+    <h4><a name="TOC-Follow-Tracks"></a>Follow Tracks</h4> 
+    <p>To find tracks or to follow them for 1 mile requires a successful Survival check. You must make another Survival check every time the tracks become difficult to follow. If you are not trained in this skill, you can make untrained checks to find tracks, but you can follow them only if the DC for the task is 10 or lower. Alternatively, you can use the <a href="perception">Perception</a> skill to find a footprint or similar sign of a creature&#8217;s passage using the same DCs, but you can&#8217;t use <a href="perception">Perception</a> to follow tracks, even if someone else has already found them.</p> 
+    <p>You move at half your normal speed while following tracks (or at your normal speed with a –5 penalty on the check, or at up to twice your normal speed with a –20 penalty on the check). The DC depends on the surface and the prevailing conditions, as given on table.</p> 
+    <p><b>Action</b> A Survival check made to find tracks is at least a full-round action, and it may take even longer.</p> 
+    <p><b>Retry?</b> For finding tracks, you can retry a failed check after 1 hour (outdoors) or 10 minutes (indoors) of searching.</p> 
+    <h3><a name="TOC-Tracking-Modifiers"></a>Tracking Modifiers</h3> 
+    <ul> 
+     <li><b>Class</b> A <a href="http://www.d20pfsrd.com/classes/core-classes/ranger">ranger</a> gains a bonus on Survival checks when using this skill to find or follow the tracks of a favored enemy.</li> 
+     <li><b>Feats</b> If you have the <a href="http://www.d20pfsrd.com/feats/general-feats/self-sufficient-final">Self-Sufficient</a> feat, you get a +2 bonus on all Survival checks. If you have 10 or more ranks in Survival, the bonus increases to +4.</li> 
+     <li><b>Size and Number of Creatures being Tracked</b>: See <b>Table: Modifiers to Survival Checks when Tracking</b> below.</li> 
+     <li><b>Terrain</b>:</li> 
+     <ul> 
+      <li><i>Very Soft Ground</i>: Any surface (fresh snow, thick dust, wet mud) that holds deep, clear impressions of footprints.</li> 
+      <li><i>Soft Ground</i>: Any surface soft enough to yield to pressure, but firmer than wet mud or fresh snow, in which a creature leaves frequent but shallow footprints.</li> 
+      <li><i>Firm Ground</i>: Most normal outdoor surfaces (such as lawns, fields, woods, and the like) or exceptionally soft or dirty indoor surfaces (thick rugs and very dirty or dusty floors). The creature might leave some traces (broken branches or tufts of hair), but it leaves only occasional or partial footprints.</li> 
+      <li><i>Hard Ground</i>: Any surface that doesn&#8217;t hold footprints at all, such as bare rock or an indoor floor. Most streambeds fall into this category, since any footprints left behind are obscured or washed away. The creature leaves only traces (scuff marks or displaced pebbles).</li> 
+     </ul> 
+    </ul> 
+    <div style="font-size:15px"> 
+     <table border="1" cellpadding="5"> 
+      <caption style="text-align:left;font-weight:bold;padding:10px 0px">
+        Table: Base Survival DC&#8217;s to Track by Ground Condition 
+      </caption> 
+      <thead> 
+       <tr> 
+        <th style="text-align:center">Surface</th> 
+        <th style="text-align:center">Survival DC</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="text">Very soft ground</td> 
+        <td class="number">5</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Soft ground</td> 
+        <td class="number">10</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Firm ground</td> 
+        <td class="number">15</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Hard ground</td> 
+        <td class="number">20</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <div style="font-size:15px"> 
+     <table border="1" cellpadding="5"> 
+      <caption style="text-align:left;font-weight:bold;padding:10px 0px">
+        Table: Modifiers to Survival Checks when Tracking 
+      </caption> 
+      <thead> 
+       <tr> 
+        <th style="text-align:center">Condition</th> 
+        <th style="text-align:center">Survival DC Modifier</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="text">Every three creatures in the group being tracked</td> 
+        <td class="number">–1</td> 
+       </tr> 
+      </tbody> 
+      <thead> 
+       <tr> 
+        <th colspan="2">Size of creature or creatures being tracked:<sup style="font-size:10px">1</sup></th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="text">Fine</td> 
+        <td class="number">+8</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Diminutive</td> 
+        <td class="number">+4</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Tiny</td> 
+        <td class="number">+2</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Small</td> 
+        <td class="number">+1</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Medium</td> 
+        <td class="number">+0</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Large</td> 
+        <td class="number">–1</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Huge</td> 
+        <td class="number">–2</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Gargantuan</td> 
+        <td class="number">–4</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Colossal</td> 
+        <td class="number">–8</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Every 24 hours since the trail was made</td> 
+        <td class="number">+1</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Every hour of rain since the trail was made</td> 
+        <td class="number">+1</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Fresh snow since the trail was made</td> 
+        <td class="number">+10</td> 
+       </tr> 
+       <tr> 
+        <th colspan="2">Poor visibility:<sup style="font-size:10px">2</sup></th> 
+       </tr> 
+       <tr> 
+        <td class="text">Overcast or moonless night</td> 
+        <td class="number">+6</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Moonlight</td> 
+        <td class="number">+3</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Fog or precipitation</td> 
+        <td class="number">+3</td> 
+       </tr> 
+       <tr> 
+        <td class="text">Tracked party hides trail (and moves at half speed)</td> 
+        <td class="number">+5</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <p style="font-size:12px"> <sup style="font-size:10px">1</sup> For a group of mixed sizes, apply only the modifier for the largest size category.<br> <sup style="font-size:10px">2</sup> Apply only the largest modifier from this category. </p> 
+    <h4><a name="TOC-Survive-in-the-Wilderness"></a>Survive in the Wilderness</h4> 
+    <p>You can keep yourself and others safe and fed in the wild. See <b>Table: Survival DCs by Task</b> for DCs for various tasks that require Survival checks.</p> 
+    <p><b>Action</b> Varies. A single Survival check may represent activity over the course of hours or a full day.</p> 
+    <p><b>Retry?</b> For getting along in the wild or for gaining the <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Fortitude" rel="nofollow">Fortitude</a> save bonus noted in <b>Table: Survival DCs by Task</b>, you make a Survival check once every 24 hours. The result of that check applies until the next check is made.</p> 
+    <div style="font-size:15px"> 
+     <table border="1" cellpadding="5"> 
+      <caption style="text-align:left;font-weight:bold;padding:10px 0px">
+        Table: Survival DCs by Task 
+      </caption> 
+      <thead> 
+       <tr> 
+        <th style="text-align:center">Survival DC</th> 
+        <th style="text-align:center">Task</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="number">10</td> 
+        <td class="number">Get along in the wild. Move up to half your overland speed while hunting and foraging (no food or water supplies needed). You can provide food and water for one other person for every 2 points by which your check result exceeds 10.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">15</td> 
+        <td>Gain a +2 bonus on all <a href="http://www.d20pfsrd.com/gamemastering/combat#35TOC-Fortitude" rel="nofollow">Fortitude</a> saves against severe weather while moving up to half your overland speed, or gain a +4 bonus if you remain stationary. You may grant the same bonus to one other character for every 1 point by which your Survival check result exceeds 15.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">15</td> 
+        <td class="text">Keep from getting lost or avoid natural hazards, such as quicksand.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">15</td> 
+        <td class="text">Predict the weather up to 24 hours in advance. For every 5 points by which your Survival check result exceeds 15, you can predict the weather for one additional day in advance.</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <h4><a name="TOC-Modifiers"></a>Modifiers</h4> 
+    <ul> 
+     <li><b>Training</b> If you are trained in Survival, you can automatically determine where true north lies in relation to yourself.</li> 
+     <li><b>Class</b> A <a href="http://www.d20pfsrd.com/classes/core-classes/ranger">ranger</a> gains a bonus on Survival checks when using this skill to find or follow the tracks of a favored enemy.</li> 
+     <li><b>Feats</b> If you have the <a href="http://www.d20pfsrd.com/feats/general-feats/self-sufficient-final">Self-Sufficient</a> feat, you get a +2 bonus on all Survival checks. If you have 10 or more ranks in Survival, the bonus increases to +4.</li> 
+    </ul> 
+    <h4><a name="TOC-Survival-Unchained"></a>Survival Unchained</h4> 
+    <p style="font-size:12px"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" title="Pathfinder Unchained">PFU</a></p> 
+    <p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+    <p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+    <p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="http://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+    <a name="Unchained-Skill-Unlock"></a> 
+    <p>With sufficient ranks in <a href="survival">Survival</a>, you earn the following.</p> 
+    <div style="margin-left:20px"> 
+     <p><b>5 Ranks</b>: You reduce all <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal damage</a> you take from <a href="http://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Heat-Ex-">heat</a>, cold, starvation, or thirst by 1 point for every 5 ranks you possess in <a href="survival">Survival</a>.</p> 
+     <p><b>10 Ranks</b>: You can track creatures that leave no tracks, including flying and swimming creatures and creatures using <a href="http://www.d20pfsrd.com/classes/core-classes/druid#TOC-Trackless-Step-Ex-">trackless step</a> or <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/p/pass-without-trace" style="font-style:italic">pass without trace</a>, taking a –20 penalty on your <a href="survival">Survival</a> check.</p> 
+     <p><b>15 Ranks</b>: Once per day, you can spend 1 hour and attempt a DC 30 <a href="survival">Survival</a> check. Success grants you <a href="http://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance">cold resistance</a> or fire <a href="http://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Energy-Resistance">resistance</a> 5 for 24 hours. You can share this with one ally for every 5 by which you exceeded the check.</p> 
+     <p><b>20 Ranks</b>: You take only a –10 penalty when tracking creatures that leave no tracks.</p> 
+
+
+    <div class="content-sidebar"> 
+     <div>
+       FYI: Stealth and Detection in a Forest 
+     </div> 
+     <div style="padding:5px 10px 5px 10px">
+       In a sparse forest, the maximum distance at which a 
+      <a href="perception">Perception</a> check for detecting the nearby presence of others can succeed is 3d6 × 10 feet. In a medium forest, this distance is 2d8 × 10 feet, and in a dense forest it is 2d6 × 10 feet. 
+     </div> 
+     <div style="padding:5px 10px 5px 10px">
+       Because any square with undergrowth provides 
+      <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Concealment" rel="nofollow">concealment</a>, it&#8217;s usually easy for a creature to use the Stealth skill in the forest. Logs and massive trees provide cover, which also makes hiding possible. 
+     </div> 
+     <div style="padding:5px 10px 5px 10px">
+       The background noise in the forest makes 
+      <a href="perception">Perception</a> checks that rely on sound more difficult, increasing the DC of the check by 2 per 10 feet, not 1. 
+     </div> 
+    </div> 
+
+      
+    <script src="./js/what-input.js"></script>
+    <script src="./js/foundation.js"></script>
+</body>
+
+</html>

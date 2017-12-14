@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <title>Heal (Wis) </title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/foundation.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+<body>
+    <h1>Heal (Wis)</h1>
+    <p>You are skilled at tending to the ailments of others.</p>
+    <h3><a name="TOC-Check"></a>Check</h3>
+    <p>The DC and effect depend on the task you attempt.</p>
+    <h3><a name="TOC-Action"></a>Action</h3>
+    <p>Providing first aid, treating a wound, or treating <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a> is a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions">standard action</a>. Treating a disease or tending a creature wounded by a <a style="font-style: italic;" href="https://www.d20pfsrd.com/magic/all-spells/s/spike-growth">spike growth</a> or <a style="font-style: italic;" href="https://www.d20pfsrd.com/magic/all-spells/s/spike-stones">spike stones</a> spell takes 10 minutes of work. Treating deadly wounds takes 1 hour of work. Providing long-term care requires 8 hours of light activity.</p>
+    <div style="overflow-x: scroll; font-size: 14px;">
+    <table style="background-color: #ffffff; border-color: #888888; border-width: 1px; border-collapse: collapse;" border="1" cellpadding="5">
+    <thead>
+    <tr style="background-color: #cfe2f3;">
+    <th>Task</th>
+    <th style="text-align: center;">DC</th>
+    <th style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">AoO?</th>
+    <th style="text-align: center;">Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>Identify drug/pharmaceutical</td>
+    <td style="text-align: center;">?</td>
+    <td style="text-align: center;">?</td>
+    <td style="text-align: center;">?</td>
+    </tr>
+    <tr>
+    <td><a href="#TOC-First-Aid">Provide First aid</a></td>
+    <td style="text-align: center;">15</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">Yes<sup style="font-size: 10px;">1</sup></td>
+    <td style="text-align: center;">Standard Action</td>
+    </tr>
+    <tr style="background-color: #f3f3f3;">
+    <td><a href="#TOC-Long-Term-Care">Provide Long-term care</a></td>
+    <td style="text-align: center;">15</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">8 hours</td>
+    </tr>
+    <tr>
+    <td><a href="#TOC-Caltrops">Treat wounds from caltrops, spike growth, or spike stones</a></td>
+    <td style="text-align: center;">15</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">10 minutes</td>
+    </tr>
+    <tr style="background-color: #f3f3f3;">
+    <td><a href="#TOC-Treat-Deadly-Wounds-">Treat deadly wounds</a></td>
+    <td style="text-align: center;">20</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">1 hour</td>
+    </tr>
+    <tr>
+    <td><a href="#TOC-Treat-Poison">Treat poison</a></td>
+    <td style="text-align: center;">Poison’s save DC</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">Usually<sup style="font-size: 10px;">1</sup></td>
+    <td style="text-align: center;">Standard Action</td>
+    </tr>
+    <tr style="background-color: #f3f3f3;">
+    <td><a href="#TOC-Treat-Disease">Treat disease</a></td>
+    <td style="text-align: center;">Disease’s save DC</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">10 minutes</td>
+    </tr>
+    </tbody>
+    </table>
+    <p style="font-size: 12px;"><sup style="font-size: 10px;">1</sup> <a style="font-weight: bold;" href="https://www.d20pfsrd.com/gamemastering/combat#35Table-Actions-in-Combat">Table: Actions in Combat</a> states that administering <b>First Aid</b> provokes an attack of opportunity and using any skill that uses an action &#8220;usually&#8221; provokes an attack of opportunity.</p>
+    </div>
+    <h3><a name="TOC-Common-Uses"></a>Common Uses</h3>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Identify-Drugs-Pharmaceuticals"></a>Identify Drugs/Pharmaceuticals</h4>
+    <p style="font-size: 12px;"><b>Source</b>: Technology Guide</p>
+    <p>The Heal skill is used to identify and understand pharmaceuticals. No further information was provided in the source material.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Provide-First-Aid"></a>Provide First Aid</h4>
+    <p>You usually use first aid to save a dying character. If a character has negative hit points and is losing hit points (at the rate of 1 per round, 1 per hour, or 1 per day), you can make him stable. A stable character regains no hit points but stops losing them. First aid also stops a character from losing hit points due to effects that cause <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Bleed">bleed</a>.</p>
+    <p><b><b>Action/</b>Time</b>: 1 standard action.</p>
+    <p><b>Retry?</b> You can always retry a check to provide first aid, assuming the target of the previous attempt is still alive.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Provide-Long-Term-Care"></a>Provide Long-Term Care</h4>
+    <p>Providing long-term care means treating a wounded person for a day or more. If your Heal check is successful, the patient recovers hit points or ability score points (lost to <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a>) at twice the normal rate: 2 hit points per level for a full 8 hours of rest in a day, or 4 hit points per level for each full day of complete rest; 2 ability score points for a full 8 hours of rest in a day, or 4 ability score points for each full day of complete rest.</p>
+    <p>You can tend as many as six patients at a time. You need a few items and supplies (bandages, salves, and so on) that are easy to come by in settled lands. Giving long-term care counts as light activity for the healer. You cannot give long-term care to yourself.</p>
+    <p><b><b>Action/</b>Time</b>: 8 hours.</p>
+    <p><b>Retry?</b> Varies. Generally speaking, you can’t try a Heal check again without witnessing proof of the original check’s failure.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Treat-Deadly-Wounds-"></a>Treat Deadly Wounds*</h4>
+    <p><b>Requirement</b>: You must expend two uses from a healer&#8217;s kit to perform this task. You take a –2 penalty on your check <b>for each use</b> from a healer&#8217;s kit <b>that you lack</b>.</p>
+    <p>When treating deadly wounds, you can restore hit points to a damaged creature. Treating deadly wounds restores 1 hit point per level of the creature. If you exceed the DC by 5 or more, add your <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Wisdom-Wis-">Wisdom</a> modifier (if positive) to this amount. A creature can only benefit from its deadly wounds being treated within 24 hours of being injured and never more than once per day.</p>
+    <p><b><b>Action/</b>Time</b>: 1 hour.</p>
+    <p><b>Retry?</b> Varies. Generally speaking, you can’t try a Heal check again without witnessing proof of the original check’s failure.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Treat-Disease"></a>Treat Disease</h4>
+    <p>To treat a <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">disease</a> means to tend to a single <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">diseased</a> character. Every time the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">diseased</a> character makes a saving throw against <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">disease</a> effects, you make a Heal check. If your Heal check exceeds the DC of the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">disease</a>, the character receives a +4 competence bonus on his saving throw against the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">disease</a>.</p>
+    <p><b><b>Action/</b>Time</b>: 10 minutes.</p>
+    <p><b>Retry?</b> Varies. Generally speaking, you can’t try a Heal check again without witnessing proof of the original check’s failure.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Treat-Poison"></a>Treat Poison</h4>
+    <p>To treat <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a> means to tend to a single character who has been <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poisoned</a> and who is going to take more damage from the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a> (or suffer some other effect). Every time the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poisoned</a> character makes a saving throw against the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a>, you make a Heal check. If your Heal check exceeds the DC of the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a>, the character receives a +4 competence bonus on his saving throw against the <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a>.</p>
+    <p><b>Action/Time</b>: 1 standard action.</p>
+    <p><b>Retry?</b> Varies. Generally speaking, you can’t try a Heal check again without witnessing proof of the original check’s failure.</p>
+    <a name="TOC-Caltrops"></a>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Treat-Wounds-from-Caltrops-Spike-Growth-or-Spike-Stones"></a>Treat Wounds from Caltrops, Spike Growth, or Spike Stones</h4>
+    <p>A creature wounded by stepping on a <a href="https://www.d20pfsrd.com/equipment---final/goods-and-services#TOC-Caltrops">caltrop</a> moves at one-half normal speed. A successful Heal check removes this movement penalty.</p>
+    <p>A creature wounded by a <a style="font-style: italic;" href="https://www.d20pfsrd.com/magic/all-spells/s/spike-growth">spike growth</a> or <a style="font-style: italic;" href="https://www.d20pfsrd.com/magic/all-spells/s/spike-stones">spike stones</a> spell must succeed on a <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex">Reflex</a> save or take injuries that reduce his speed by one-third. Another character can remove this penalty by taking 10 minutes to dress the victim’s injuries and succeeding on a Heal check against the spell’s save DC.</p>
+    <p><b><b>Action/</b>Time</b>: 10 minutes.</p>
+    <p><b>Retry?</b> Varies. Generally speaking, you can’t try a Heal check again without witnessing proof of the original check’s failure.</p>
+    <h3><a name="TOC-Modifiers"></a>Modifiers</h3>
+    <ul>
+        <li><b>Feats</b> If you have the <a href="https://www.d20pfsrd.com/feats/general-feats/self-sufficient---final">Self-Sufficient</a> feat, you get a +2 bonus on all Heal checks. If you have 10 or more ranks in Heal, the bonus increases to +4.</li>
+        <li><b>Equipment</b> A <a href="https://www.d20pfsrd.com/equipment---final/goods-and-services#TOC-Healer-s-Kit">healer’s kit</a> gives you a +2 circumstance bonus on Heal checks.</li>
+    </ul>
+    <h4><a name="TOC-Heal-Unchained"></a>Heal Unchained</h4>
+    <p style="font-size: 12px;"><b>Source</b> <a title="Pathfinder Unchained" href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" rel="nofollow">PFU</a></p>
+    <p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p>
+    <p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="https://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p>
+    <p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="https://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="https://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="https://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p>
+    <a name="Unchained-Skill-Unlock"></a>
+    <p>With sufficient ranks in <a href="https://www.d20pfsrd.com/skills/heal">Heal</a>, you earn the following.</p>
+    <div style="margin-left: 20px;">
+    <p><b>5 Ranks</b>: When you treat deadly wounds, the target recovers <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Hit-Points">hit points</a> and <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a> as if it had rested for a full day.</p>
+    <p><b>10 Ranks</b>: When you treat deadly wounds, the target recovers <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Hit-Points">hit points</a> as if it had rested for a full day with long-term care.</p>
+    <p><b>15 Ranks</b>: When you treat deadly wounds, the creature recovers hit point and <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a> as if it had rested for 3 days.</p>
+    <p><b>20 Ranks</b>: When you treat deadly wounds, the target recovers hit point and <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a> as if it had rested for 3 days with long-term care.</p>
+    </div>
+    <div style="margin: 10px 0px; border: thin solid #999999;">
+    <div style="font-size: 14px; font-weight: bold; background-color: #f3f3f3; padding: 5px; text-indent: 5px;">New Uses for Old Skills</div>
+    <div style="font-size: 16px; padding: 10px; text-align: left;">
+    <p style="font-size: 12px;"><b>Source</b>: Villains: Rebirth</p>
+    <p>Although the Heal skill is traditionally used to aid the injured, treat <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Poison">poison</a> and <a href="https://www.d20pfsrd.com/gamemastering/afflictions#TOC-Diseases">disease</a>, and otherwise provide comfort to the wounded and infirm, the anatomic knowledge granted by this skill allows it to be used for far more nefarious uses as well. Any character may attempt to torture a living target with physical and mental anguish; the results of such torture can be determined with a Heal check. Note that torture is an evil act, and as such may have repercussions on good characters (especially <a href="https://www.d20pfsrd.com/classes/core-classes/paladin">paladins</a>, <a href="https://www.d20pfsrd.com/classes/core-classes/cleric">clerics</a>, and others that must abide by the precepts of their <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Alignment">alignment</a>).</p>
+    <p><b>Check:</b> The <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Difficulty-Class-DC-">DC</a> and effect depend on the task you attempt.</p>
+    <div style="overflow-x: scroll; font-size: 14px;">
+    <table style="background-color: #ffffff; border-color: #888888; border-width: 1px; border-collapse: collapse;" border="1" cellpadding="5">
+    <thead>
+    <tr style="background-color: #cfe2f3;">
+    <th>Task</th>
+    <th style="text-align: center;">DC</th>
+    <th style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">AoO?</th>
+    <th style="text-align: center;">Time</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><a href="https://www.d20pfsrd.com/skills/heal#TOC-Prevent-Recovery">Prevent recovery</a></td>
+    <td style="text-align: center;">15</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">1 hour</td>
+    </tr>
+    <tr style="background-color: #f3f3f3;">
+    <td><a href="https://www.d20pfsrd.com/skills/heal#TOC-Torture">Torture</a></td>
+    <td style="text-align: center;">15</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">1 hour</td>
+    </tr>
+    <tr>
+    <td><a href="https://www.d20pfsrd.com/skills/heal#TOC-Deep-Hurting">Deep hurting</a></td>
+    <td style="text-align: center;">20 or 30</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">2 hours</td>
+    </tr>
+    <tr style="background-color: #f3f3f3;">
+    <td><a href="https://www.d20pfsrd.com/skills/heal#TOC-Prevent-Fast-Healing">Prevent fast healing</a></td>
+    <td style="text-align: center;">25</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">1 hour</td>
+    </tr>
+    <tr>
+    <td><a href="https://www.d20pfsrd.com/skills/heal#TOC-Erode-Willpower">Erode willpower</a></td>
+    <td style="text-align: center;">Target&#8217;s Will saving throw modifier (modified for morale penalties) +10</td>
+    <td style="text-align: center;" title="Does this action provoke an Attack of Opportunity?">&#8211;</td>
+    <td style="text-align: center;">24 hours</td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Prevent-Recovery"></a>Prevent Recovery</h4>
+    <p>A victim in the care of a torturer can be prevented from naturally healing from wounds or <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Ability-Damage-and-Drain-Ex-or-Su-">ability damage</a> by worrying the victim’s wounds, keeping him malnourished, and using various substances to promote prolonged sickness. Preventing recovery counts as light activity for the torturer, and requires an hour’s work per day per victim. A victim successfully treated with this form of torture does not heal hit point or <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Ability-Damage-and-Drain-Ex-or-Su-">ability damage</a> naturally from rest for that day.</p>
+    <p><b>Time</b>: 1 hour.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Torture"></a>Torture</h4>
+    <p>Over the course of an hour, you can torture a victim with intent to subdue or kill. If the Heal check is successful, you cause <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Nonlethal-Damage">nonlethal damage</a> or lethal damage (your choice) equal to the victim’s experience level (or number of hit dice for targets without class levels). Note that the results of this skill do not guarantee answers if you are torturing a subject in order to gain knowledge he might have; the subject of torture can always decide to divulge such knowledge if he wishes to avoid more pain and suffering. Against NPCs, assume that with each hour of torture, they must make a Will <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Saving-Throws">saving throw</a> against the result of that hour’s Heal check (modified by a cumulative –1 morale penalty to the check for each hour the torture has continued) to avoid breaking under the pressure and answering your questions. Even then, results are not guaranteed. A particularly crafty or brave victim might try to <a href="https://www.d20pfsrd.com/skills/bluff">Bluff</a> an answer and give false information; use this method if the torture victim actually does not know the information you are seeking and is trying to just make something up to stop the pain. Do not use this method when a player character is being tortured; the player should decide when and if he wishes to give out information to his torturer.</p>
+    <p><b>Time</b>: 1 hour.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Deep-Hurting"></a>Deep Hurting</h4>
+    <p>This method of torture is similar to standard torture, except that it targets a victim’s ability score rather than his <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Hit-Points">hit points</a>. Inflicting deep hurting is more time consuming than standard torture; a single session of deep hurting takes 2 hours to finish. With a successful Heal check, you deal 1 point of <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a> or <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Drain">ability drain</a> to one of the victim’s ability scores chosen by you. To inflict <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Score-Damage">ability damage</a> the <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Difficulty-Class-DC-">DC</a> is 20, but if you make a <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Difficulty-Class-DC-">DC</a> of 30 with the roll you can opt to inflict <a href="https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Ability-Drain">ability drain</a> instead. All other rules governing deep hurting function identically to the rules for standard torture.</p>
+    <p><b>Time</b>: 2 hours.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Prevent-Fast-Healing"></a>Prevent Fast Healing</h4>
+    <p>By using potent acids, applications of fire, and mechanical devices designed to prevent wounds from properly healing, you can prevent a creature’s <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Fast-Healing-Ex-">fast healing</a> ability from healing damage inflicted upon it. One check must be made each day to keep the creature from healing. In all other ways, this form of torture is treated as if the torturer were preventing recovery. Preventing actual <a href="https://www.d20pfsrd.com/bestiary/rules-for-monsters/universal-monster-rules#TOC-Regeneration-Ex-">regeneration</a> is beyond the scope of the Heal skill; a torturer is better off simply using things that cause lethal damage to the target.</p>
+    <p><b>Time</b>: 1 hour.</p>
+    <h4 style="background-color: #cfe2f3; padding: 3px;"><a name="TOC-Erode-Willpower"></a>Erode Willpower</h4>
+    <p>The erosion of a target’s power to resist with his mind is a different form of torture, and one that usually does not require direct physical harm. Rather, this form of torture relies upon subjecting the victim to horribly uncomfortable living conditions for an extended period of time. This may consist of imprisoning the victim in a cage sized to prevent him from doing anything but crouching, or it may consist of keeping the victim in a room filled to the neck with rancid water, or it may involve exposing the victim to repetitive loud and jarring noises (such as the constant sound of nails scraping on slate). Each day that you make the <a href="https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Difficulty-Class-DC-">DC</a> to erode a target’s willpower, the victim’s <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Will">Will</a> <a href="https://www.d20pfsrd.com/gamemastering/combat#TOC-Saving-Throws">saving throw</a> suffers a cumulative –1 morale penalty for the length of the next day. As soon as one day passes without having his willpower eroded, all accumulated morale penalties vanish.</p>
+    <p><b>Time</b>: 24 hours.</p>
+    
+
+
+
+    <script src="./js/what-input.js"></script>
+    <script src="./js/foundation.js"></script>
+</body>
+
+</html>

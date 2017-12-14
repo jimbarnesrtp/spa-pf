@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <title>Climb (Str; Armor Check Penalty) </title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/foundation.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+<body>
+    <h1>Climb (Str; Armor Check Penalty)</h1>
+    <p>You are skilled at scaling vertical surfaces, from smooth city walls to rocky cliffs.</p> 
+    <h3><a name="TOC-Check"></a>Check</h3> 
+    <p>With a successful Climb check, you can advance up, down, or across a slope, wall, or other steep incline (or even across a ceiling, provided it has handholds) at one-quarter your normal speed. A slope is considered to be any incline at an angle measuring less than 60 degrees; a wall is any incline at an angle measuring 60 degrees or more. A Climb check that fails by 4 or less means that you make no progress, and one that fails by 5 or more means that you fall from whatever height you have already attained. The DC of the check depends on the conditions of the climb. Compare the task with those on the following table to determine an appropriate DC.</p> 
+    <p>You need both hands free to climb, but you may cling to a wall with one hand while you cast a spell or take some other action that requires only one hand. While climbing, you can’t move to avoid a blow, so you lose your <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus to AC (if any). You also can’t use a shield while climbing. Anytime you take damage while climbing, make a Climb check against the DC of the slope or wall. Failure means you fall from your current height and sustain the appropriate falling damage.</p> 
+    <div style="font-size:15px"> 
+     <table border="1" cellpadding="5"> 
+      <caption style="text-align:left;font-weight:bold;padding:10px 0px">
+        Table: Climb DCs 
+      </caption> 
+      <thead> 
+       <tr> 
+        <th style="text-align:center;width:100px">DC</th> 
+        <th>Example Surface or Activity</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="number">0</td> 
+        <td class="text">A slope too steep to walk up, or a knotted rope with a wall to brace against.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">5</td> 
+        <td>A rope with a wall to brace against, or a knotted rope, or a rope affected by the <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/r/rope-trick" style="font-style:italic">rope trick</a> spell.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">10</td> 
+        <td class="text">A surface with ledges to hold on to and stand on, such as a very rough wall or a ship’s rigging.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">15</td> 
+        <td class="text">Any surface with adequate handholds and footholds (natural or artificial), such as a very rough natural rock surface or a tree, or an unknotted rope, or pulling yourself up when dangling by your hands.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">20</td> 
+        <td class="text">An uneven surface with some narrow handholds and footholds, such as a typical wall in a dungeon.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">21</td> 
+        <td><a href="http://www.d20pfsrd.com/gamemastering/environment/urban-adventures#TOC-City-Buildings">A typical buildings upper-story wall</a></td> 
+       </tr> 
+       <tr> 
+        <td class="number">25</td> 
+        <td><a href="http://www.d20pfsrd.com/gamemastering/environment/urban-adventures#TOC-City-Buildings">A typical buildings lower-story wall</a></td> 
+       </tr> 
+       <tr> 
+        <td class="number">25</td> 
+        <td class="text">A rough surface, such as a natural rock wall or a brick wall.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">30</td> 
+        <td>An overhang or ceiling with handholds but no footholds, or <a href="http://www.d20pfsrd.com/gamemastering/environment/urban-adventures#TOC-Walls-and-Gates">a typical city wall</a></td> 
+       </tr> 
+       <tr> 
+        <td class="marker">—</td> 
+        <td class="text">A perfectly smooth, flat, vertical (or inverted) surface cannot be climbed.</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+    <div style="font-size:15px"> 
+     <table border="1" cellpadding="5"> 
+      <caption style="text-align:left;font-weight:bold;padding:10px 0px">
+        Table: Climb DC Modifiers by Surface or Activity 
+      </caption> 
+      <thead> 
+       <tr> 
+        <th style="text-align:center;width:100px">Climb DC<br> Modifier</th> 
+        <th>Example Surface or Activity</th> 
+       </tr> 
+      </thead> 
+      <tbody> 
+       <tr> 
+        <td class="number">–10</td> 
+        <td class="text">Climbing a chimney (artificial or natural) or other location where you can brace against two opposite walls.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">–5</td> 
+        <td class="text">Climbing a corner where you can brace against perpendicular walls.</td> 
+       </tr> 
+       <tr> 
+        <td class="number">+5</td> 
+        <td class="text">Surface is slippery.</td> 
+       </tr> 
+      </tbody> 
+     </table> 
+     <p style="font-size:12px"><sup style="font-size:10px">*</sup> These modifiers are cumulative; use all that apply.</p> 
+    </div> 
+    <h4><a name="TOC-Accelerated-Climbing"></a>Accelerated Climbing</h4> 
+    <p>You try to climb more quickly than normal. By accepting a –5 penalty, you can move half your speed (instead of one-quarter your speed).</p> 
+    <h4><a name="TOC-Make-Your-Own-Handholds-and-Footholds"></a>Make Your Own Handholds and Footholds</h4> 
+    <p>You can make your own handholds and footholds by pounding pitons into a wall. Doing so takes 1 minute per piton, and one piton is needed per 5 feet of distance. As with any surface that offers handholds and footholds, a wall with pitons in it has a DC of 15. In the same way, a climber with a <a href="http://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/handaxe">handaxe</a> or similar implement can cut handholds in an ice wall.</p> 
+    <h4><a name="TOC-Catch-Yourself-When-Falling"></a>Catch Yourself When Falling</h4> 
+    <p>It’s practically impossible to catch yourself on a wall while falling. Make a Climb check (DC = wall’s DC + 20) to do so. It’s much easier to catch yourself on a slope (DC = slope’s DC + 10).</p> 
+    <h4><a name="TOC-Catch-a-Falling-Character-While-Climbing"></a>Catch a Falling Character While Climbing</h4> 
+    <p>If someone climbing above you or adjacent to you falls, you can attempt to catch the falling character if he or she is within your reach. Doing so requires a successful melee <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Touch-Attacks">touch attack</a> against the falling character (though he or she can voluntarily forgo any <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus to AC if desired). If you hit, you must immediately attempt a Climb check (DC = wall’s DC + 10). Success indicates that you catch the falling character, but his total weight, including equipment, cannot exceed your heavy load limit or you automatically fall. If you fail your Climb check by 4 or less, you fail to stop the character’s fall but don’t lose your grip on the wall. If you fail by 5 or more, you fail to stop the character’s fall and begin falling as well.</p> 
+    <h3><a name="TOC-Action"></a>Action</h3> 
+    <p>Climbing is part of movement, so it’s generally part of a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions" rel="nofollow">move action</a> (and may be combined with other types of movement in a <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a>). Each <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Move-Actions">move action</a> that includes any climbing requires a separate Climb check. Catching yourself or another falling character doesn’t take an action.</p> 
+    <h3><a name="TOC-Modifiers"></a>Modifiers</h3> 
+    <ul> 
+     <li><b>Rope</b> You can use a rope to haul a character upward (or lower a character) through sheer strength. You can lift double your maximum load in this manner.</li> 
+     <li><b>Climb Speed </b>A creature with a climb speed has a +8 <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus">racial bonus</a> on all Climb checks. The creature must make a Climb check to climb any wall or slope with a DC higher than 0, but it can always choose to take 10, even if rushed or <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Threatened-Squares">threatened</a> while climbing. If a creature with a climb speed chooses an accelerated climb (see above), it moves at double its climb speed (or at its land speed, whichever is slower) and makes a single Climb check at a –5 penalty. Such a creature retains its <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus to <a href="http://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class">Armor Class</a> (if any) while climbing, and opponents get no special bonus to their attacks against it. It cannot, however, use the run action while climbing.</li> 
+     <li><b>Feats</b> If you have the <a href="http://www.d20pfsrd.com/feats/general-feats/athletic-final">Athletic</a> feat, you get a +2 bonus on Climb checks. If you have 10 or more ranks in Climb, the bonus increases to +4.</li> 
+     <li><b>Size</b> Any creature of Tiny or smaller size should use its <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dex</a> modifier instead of its <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-">Str</a> modifier for Climb and <a href="swim">Swim</a> checks (see FAQ).<br> </li> 
+    </ul> 
+    <div> 
+     <div> 
+      <div style="float:right"> 
+       <a href="http://200e02f3-a-62cb3a1a-s-sites.googlegroups.com/site/pathfinderogc/classes/base-classes/witch/icon_faq.png?attachauth=ANoY7cr6cBh0PhzWl21SlvSNyeeiHxs6bBi5rPi_Owk5_MNW--wPIZ4RmmRBpmHVgupujeAURudl8cjxrqxtbvB9AFcPBQWK0x25n4SpkANSCqK-0s7bNIZQWMD-ybc6If3qo35qws2O7NtGK8i2KB3BynAxDgJEFqAjt-Qp1DGjq_lShMyX7s6ZENoWWrTSbXUowPg_LsGPYcbJICHMjRMip2KuO6RaLguk2-01GdrBRwScQeVKrm_iBnEJou0PCQz117HTF0Dy&amp;attredirects=0"> <img border="0" height="32px" src="http://d20pfsrd.opengamingnetwork.com/wp-content/uploads/sites/12/2017/01/icon_faq-3.png" width="35px"></a> 
+      </div> FAQ 
+     </div> 
+     <div> 
+      <p style="font-weight:bold">Should all Tiny creatures use <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dex</a> instead of <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-">Str</a> for Climb and <a href="swim">Swim</a> skill checks, or is that just for familiars?</p> 
+      <p>Any creature of Tiny or smaller size should use its <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dex</a> modifier instead of its <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-">Str</a> modifier for Climb and <a href="swim">Swim</a> checks.</p> 
+      <p style="font-size:12px">[<a href="http://paizo.com/paizo/faq/v5748nruor1fo#v5748eaic9qnq" target="_blank">Source</a>]</p> 
+     </div> 
+    </div> 
+    <h4><a name="TOC-Climb-Unchained"></a>Climb Unchained</h4> 
+    <p style="font-size:12px"><b>Source</b> <a href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank" title="Pathfinder Unchained">PFU</a></p> 
+    <p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+    <p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+    <p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="http://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+    <p>With sufficient ranks in Climb, you earn the following.<a name="Unchained-Skill-Unlock"></a></p> 
+    <div style="margin-left:20px"> 
+     <p><b>5 Ranks</b>: You are no longer denied your <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Dexterity-Dex-">Dexterity</a> bonus when climbing.</p> 
+     <p><b>10 Ranks</b>: You gain a natural climb speed (but not the +8 <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus">racial bonus</a> on Climb checks) of 10 feet, but only on surfaces with a Climb DC of 20 or lower.</p> 
+     <p><b>15 Ranks</b>: You gain a natural climb speed (but not the +8 <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus">racial bonus</a> on Climb checks) equal to your base speed on surfaces with a Climb DC of 20 or lower, and of 10 feet on all other surfaces.</p> 
+     <p><b>20 Ranks</b>: You gain a natural climb speed equal to your base speed on all surfaces. If you have both hands free, you gain a +8 <a href="http://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Racial-Bonus">racial bonus</a> on Climb checks.</p> 
+    </div> 
+
+
+    <script src="./js/what-input.js"></script>
+    <script src="./js/foundation.js"></script>
+</body>
+
+</html>

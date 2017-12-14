@@ -1,0 +1,106 @@
+[{
+    "name": "Acrobatics",
+    "url": "fragments/acrobatics.html"
+}, {
+    "name": "Appraise",
+    "url": "fragments/appraise.html"
+}, {
+    "name": "Bluff",
+    "url": "fragments/bluff.html"
+}, {
+    "name": "Climb",
+    "url": "fragments/climb.html"
+}, {
+    "name": "Craft",
+    "url": "fragments/craft.html"
+}, {
+    "name": "Diplomacy",
+    "url": "fragments/diplomacy.html"
+}, {
+    "name": "Disable Device",
+    "url": "fragments/disabledevice.html"
+}, {
+    "name": "Disguise",
+    "url": "fragments/disguise.html"
+}, {
+    "name": "Escape Artist",
+    "url": "fragments/escapeartist.html"
+}, {
+    "name": "Fly",
+    "url": "fragments/fly.html"
+}, {
+    "name": "Handle Animal",
+    "url": "fragments/handleanimal.html"
+}, {
+    "name": "Heal",
+    "url": "fragments/heal.html"
+}, {
+    "name": "Intimidate",
+    "url": "fragments/intimidate.html"
+}, {
+    "name": "Knowledge (arcana)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (dungeoneering)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (engineering)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (geography)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (history)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (local)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (nature)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (nobility)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (planes)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Knowledge (religion)",
+    "url": "fragments/knowledge.html"
+}, {
+    "name": "Linguistics",
+    "url": "fragments/linguistics.html"
+}, {
+    "name": "Perception",
+    "url": "fragments/perception.html"
+}, {
+    "name": "Perform",
+    "url": "fragments/perform.html"
+}, {
+    "name": "Profession",
+    "url": "fragments/profession.html"
+}, {
+    "name": "Ride",
+    "url": "fragments/ride.html"
+}, {
+    "name": "Sense Motive",
+    "url": "fragments/sensemotive.html"
+}, {
+    "name": "Sleight of Hand",
+    "url": "fragments/sleightofhand.html"
+}, {
+    "name": "Spellcraft",
+    "url": "fragments/spellcraft.html"
+}, {
+    "name": "Stealth",
+    "url": "fragments/stealth.html"
+}, {
+    "name": "Survival",
+    "url": "fragments/survival.html"
+}, {
+    "name": "Swim",
+    "url": "fragments/swim.html"
+}, {
+    "name": "Use Magic Device",
+    "url": "fragments/umd.html"
+}]

@@ -1,0 +1,195 @@
+<html>
+
+<head>
+  <title>Diplomacy (Cha) </title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/app.css">
+<link rel="stylesheet" type="text/css" href="./css/foundation.css">
+<script src="./js/jquery-3.2.1.min.js"></script>
+
+<body>
+  <h1>Diplomacy (Cha)</h1>
+  <p>You can use this skill to persuade others to agree with your arguments, to resolve differences, and to gather valuable information or rumors from people. This skill is also used to negotiate conflicts by using the proper etiquette and manners suitable to the problem.</p> 
+  <h3><a name="TOC-Common-Uses"></a>Common Uses</h3> 
+  <h4><a name="TOC-Gather-Information"></a>Gather Information</h4> 
+  <p>You can use Diplomacy to gather information about a specific topic or individual. To do this, you must spend at least 1d4 hours canvassing people at local taverns, markets, and gathering places. The DC of this check depends on the obscurity of the information sought, but for most commonly known facts or rumors it is 10. For obscure or secret knowledge, the DC might increase to 20 or higher. The GM might rule that some topics are simply unknown to common folk.</p> 
+  <p><b>Retry?</b> Yes. You can retry Diplomacy checks made to gather information.</p> 
+  <h4><a name="TOC-Influence-Attitude"></a>Influence Attitude</h4> 
+  <p>You can change the initial attitudes of nonplayer characters with a successful check. The DC of this check depends on the creature’s starting attitude toward you, adjusted by its Charisma modifier.</p> 
+  <p style="margin-left: 40px;"><i>Succeed</i>&#8211; If you succeed, the character’s attitude toward you is improved by one step. For every 5 by which your check result exceeds the DC, the character’s attitude toward you increases by one additional step. A creature’s attitude cannot be shifted more than two steps up in this way, although the GM can override this rule in some situations.</p> 
+  <p style="margin-left: 40px;"><i>Fail</i>&#8211; If you fail the check by 4 or less, the character’s attitude toward you is unchanged. If you fail by 5 or more, the character’s attitude toward you is decreased by one step.</p> 
+  <p>You cannot use Diplomacy against a creature that does not understand you or has an Intelligence of 3 or less. Diplomacy is generally ineffective in combat and against creatures that intend to harm you or your allies in the immediate future. Any attitude shift caused through Diplomacy generally lasts for 1d4 hours but can last much longer or shorter depending upon the situation (GM discretion).</p> 
+  <p><b>Retry?</b> You cannot use Diplomacy to influence a given creature’s attitude more than once in a 24 hour period. If a request is refused, the result does not change with additional checks, although other requests might be made.</p> 
+  <table border="1" cellpadding="5"> 
+   <tbody> 
+    <tr> 
+     <th style="text-align: center;">Starting Attitude</th> 
+     <th style="text-align: center;">Diplomacy DC</th> 
+    </tr> 
+    <tr> 
+     <td class="text">Hostile</td> 
+     <td style="text-align: center;">25+ creature&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#35TOC-Charisma-Cha-">Cha</a> Modifier</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Unfriendly</td> 
+     <td style="text-align: center;">20+ creature&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#35TOC-Charisma-Cha-">Cha</a> Modifier</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Indifferent</td> 
+     <td style="text-align: center;">15+ creature&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#35TOC-Charisma-Cha-">Cha</a> Modifier</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Friendly</td> 
+     <td style="text-align: center;">10+ creature&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#35TOC-Charisma-Cha-">Cha</a> Modifier</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Helpful</td> 
+     <td style="text-align: center;">0+ creature&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#35TOC-Charisma-Cha-">Cha</a> Modifier</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <h4><a name="TOC-Make-Request"></a>Make Request</h4> 
+  <p>If a creature’s attitude toward you is at least indifferent, you can make requests of the creature. This is an additional Diplomacy check, using the creature’s current attitude to determine the base DC, with one of the following modifiers. Once a creature’s attitude has shifted to helpful, the creature gives in to most requests without a check, unless the request is against its nature or puts it in serious peril. Some requests automatically fail if the request goes against the creature’s values or its nature, subject to GM discretion.</p> 
+  <table border="1" cellpadding="5"> 
+   <tbody> 
+    <tr> 
+     <th>Request</th> 
+     <th style="text-align: center;">Diplomacy Modifier</th> 
+    </tr> 
+    <tr> 
+     <td class="text">Give simple advice or directions</td> 
+     <td class="number">–5</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Give detailed advice</td> 
+     <td class="number">+0</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Give simple aid</td> 
+     <td class="number">+0</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Reveal an unimportant secret</td> 
+     <td class="number">+5</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Give lengthy or complicated aid</td> 
+     <td class="number">+5</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Give dangerous aid</td> 
+     <td class="number">+10</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Reveal secret knowledge</td> 
+     <td class="text">+10 or more</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Give aid that could result in punishment</td> 
+     <td class="text">+15 or more</td> 
+    </tr> 
+    <tr> 
+     <td class="text">Additional requests</td> 
+     <td class="text">+5 per request</td> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <h4><a name="TOC-Suggest-Course-of-Action"></a>Suggest Course of Action</h4> 
+  <p style="font-size: 12px;"><b>Source</b>: <a href="http://www.amazon.com/gp/product/1601257120/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257120&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=G33FDB42DACEVNTK" target="_blank" rel="nofollow">PPC:GHH</a></p> 
+  <p>You can use Bluff and <a href="diplomacy">Diplomacy</a> together to make a request of a creature, without it even realizing you have made the request.</p> 
+  <p><b>Check</b>: You can gradually coax a target into thinking a suggestion is entirely its own idea, making the creature more likely to act on the idea than if you had suggested it outright. You discuss topics subtly relevant to the request, asking leading questions and narrowing the scope of the conversation so that the target eventually decides to take a specific action you have led it to.</p> 
+  <p>You first attempt a <a href="bluff">Bluff</a> check to convince the target that your request was actually its idea. This is always treated as far-fetched circumstances, resulting in a –10 penalty on the check. If successful, you then attempt a <a href="diplomacy">Diplomacy</a> check to make the request of the creature, treating its attitude toward you as indifferent for this single request (regardless of its actual attitude).</p> 
+  <p><b>Action</b>: Planting a notion and then coaxing a target into suggesting the notion himself each require at least 1 minute of continuous interaction. This can be difficult to arrange with a hostile or unfriendly creature.</p> 
+  <h3><a name="TOC-Action-Summary"></a>Action Summary</h3> 
+  <ul> 
+   <li><b>Gather Information</b>: Using Diplomacy to gather information takes <b>1d4 hours</b> of work, searching for rumors and informants.</li> 
+   <li><b>Influence Attitude</b>: Using Diplomacy to influence a creature’s attitude takes <b>1 minute</b> of continuous interaction.</li> 
+   <li><b>Make Request</b>: Making a request of a creature takes <b>1 or more rounds</b> of interaction, depending upon the complexity of the request.</li> 
+   <li><b>Suggest Course of Action</b>: at least 1 minute of continuous interaction.</li> 
+  </ul> 
+  <h3><a name="TOC-Modifiers"></a>Modifiers</h3> 
+  <ul> 
+   <li><b>Feats</b> If you have the <a href="http://www.d20pfsrd.com/feats/general-feats/persuasive-final">Persuasive</a> feat, you gain a +2 bonus on Diplomacy checks. If you have 10 or more ranks in Diplomacy, the bonus increases to +4.</li> 
+  </ul> 
+  <div> 
+   <div>
+     &nbsp; 
+   </div> 
+   <table style="width: 100%; clear: both;"> 
+    <tbody> 
+     <tr> 
+      <td class="marker">&nbsp;</td> 
+      <td class="marker">&nbsp;</td> 
+      <td class="marker">&nbsp;</td> 
+      <td class="marker">&nbsp;</td> 
+     </tr> 
+    </tbody> 
+   </table> 
+  </div> 
+  <h4><a name="TOC-Diplomacy-Unchained"></a>Diplomacy Unchained</h4> 
+  <p style="font-size: 12px;"><b>Source</b> <a title="Pathfinder Unchained" href="http://www.amazon.com/gp/product/1601257155/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601257155&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20&amp;linkId=SUELYCMD4O5LZ3U6" target="_blank">PFU</a></p> 
+  <p><b>About This Section</b> Optionally, a character who reaches 5, 10, 15, or 20 ranks in a skill unlocks various bonuses and abilities unique to that skill. The unchained rogue uses these rules extensively, but others can gain access to them with a new feat.</p> 
+  <p>In this system, characters unlock additional abilities when they attain 5, 10, 15, and 20 ranks in a skill. The skill unlocks system interfaces with the <a href="http://www.d20pfsrd.com/classes/unchained-classes/rogue-unchained">unchained rogue</a> to make the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> the true master of skills.</p> 
+  <p>Skill unlocks give characters new abilities and ways to use their skills upon reaching 5, 10, 15, and 20 ranks in a skill. Any character with the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat can earn skill unlocks for a single skill, and they are a prime feature of the revised version of the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a> who uses her rogue&#8217;s edge ability to gain skill unlocks for several of her most iconic skills. Alternatively, you might make skill unlocks a universal part of the game, but you should be aware they add significant power and flexibility to skills, so giving them for free to all classes would grant power boosts to other highly skilled classes such as the investigator and <a href="http://www.d20pfsrd.com/classes/core-classes/bard">bard</a>, particularly in comparison to the <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogue</a>. Another alternative is to eliminate access to the <a href="http://www.d20pfsrd.com/feats/general-feats/signature-skill-general">Signature Skill</a> feat, limiting skill unlocks to <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> and <a href="http://www.d20pfsrd.com/classes/core-classes/rogue">rogues</a> alone.</p> 
+  <p>With sufficient ranks in Diplomacy, you earn the following.<a name="Unchained-Skill-Unlock"></a></p> 
+  <div style="margin-left: 20px;"> 
+   <p><b>5 Ranks</b>: The time required to influence a creature&#8217;s attitude or gather information is halved.</p> 
+   <p><b>10 Ranks</b>: You can attempt to adjust a creature&#8217;s attitude in 1 round by taking a –10 penalty. If you take 1 minute to adjust a creature&#8217;s attitude, add your <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> bonus to the number of hours that attitude change persists.</p> 
+   <p><b>15 Ranks</b>: You can attempt to adjust a creature&#8217;s attitude in 1 round with no penalty. If you take 1 minute to adjust a creature&#8217;s attitude, the duration of the resulting change is measured in days, not hours. You can gather information in 10 minutes by taking a –5 penalty.</p> 
+   <p><b>20 Ranks</b>: You can attempt to adjust a creature&#8217;s attitude in 1 round with no penalty. If you take 1 minute to adjust a creature&#8217;s attitude, the duration of the resulting change is measured in weeks, not hours. You can gather information in 1d4 minutes with no penalty.</p> 
+  </div> 
+  <h2><a name="TOC-Bargaining"></a>Bargaining</h2> 
+  <p style="font-size: 12px;"><b>Source</b> <a title="Ultimate Campaign" href="http://www.amazon.com/gp/product/1601253591/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1601253591&amp;linkCode=as2&amp;tag=httpwwwd20pfs-20" target="_blank">Ultimate Campaign</a></p> 
+  <p>An item is worth only what someone will pay for it. To an art collector, a canvas covered in daubs of random paint may be a masterpiece; a priestess might believe a weathered jawbone is a holy relic of a saint. The rules presented here offer you a way of playing through the process of selling off goods brought up from a crypt, liberated from a baron&#8217;s bedchamber, or plundered from a dragon&#8217;s vault. They also enable players to establish contacts with local fences, launderers, antiquarians, and obsessive collectors.</p> 
+  <h3><a name="TOC-Valuation"></a>Valuation</h3> 
+  <p>The <a href="appraise">Appraise</a> skill allows a character to accurately value an object. However, the fine arts of the jeweler, antiquarian, and bibliophile are complex. Valuable paintings may be concealed by grime, and books of incredible rarity may be bound in tattered leather covers. Because failure means an inaccurate estimate, the GM should attempt this skill check in secret.</p> 
+  <p>In general, a character can sell an item for half its listed price. This keeps players from getting bogged down in bargaining with NPCs over 10 gp on a 10,000 gp item, and maintains game balance by not allowing players to use bargaining to exceed the Wealth by Level guidelines by buying low and selling high. The &#8220;sell for half &#8221; rule allows a fair price for standard items in normal circumstances.</p> 
+  <p>For rare or unique items, or in certain cases, the GM might allow or encourage bargaining. Keep in mind that bargaining usually involves one PC talking with an NPC while the other players wait, and watching someone else bargain is rarely interesting. Bargaining should be infrequent, and should happen only when it&#8217;s important to the story.</p> 
+  <p>By using the rules for bargaining, you give up some control over your PC&#8217;s decisions and accept the risk of the deal falling through to gain the chance of getting a better price.</p> 
+  <div style="margin-left: 20px;"> 
+   <h4><a name="TOC-Step-1:-Seller-Sets-the-Asking-Price"></a>Step 1: Seller Sets the Asking Price</h4> 
+   <p>The seller suggests a price to the buyer. If the Asking Price is more than 150% of the item&#8217;s actual value, the buyer simply refuses to bargain. The lowest amount the seller will accept is 75% of this Asking Price.</p> 
+   <h4><a name="TOC-Step-2:-Evaluate-Item"></a>Step 2: Evaluate Item</h4> 
+   <p>The buyer chooses to attempt either an <a href="appraise">Appraise</a> check to estimate the item&#8217;s value or a <a href="sense-motive">Sense Motive</a> check opposed by the seller&#8217;s <a href="bluff">Bluff</a> check (with failure meaning the buyer believes the seller is being fair). If the seller&#8217;s price is the same as the buyer&#8217;s estimation of the item&#8217;s value, no <a href="sense-motive">Sense Motive</a> check is needed and the buyer believes the seller.</p> 
+   <p>A group of items can be sold as a unit. If the buyer is dealing with a mix of items she can appraise and others she can only guess about, she uses either <a href="appraise">Appraise</a> or <a href="sense-motive">Sense Motive</a>, depending on which she has more skill ranks in.</p> 
+   <p>The GM can allow a PC to substitute an appropriate <a href="knowledge">Knowledge</a> skill for <a href="appraise">Appraise</a> or <a href="sense-motive">Sense Motive</a>, such as <a href="knowledge">Knowledge</a> (arcana) for selling a rare book about magic. He may also assign modifiers to skill checks to reflect expertise or ignorance about a specific type of item, good roleplaying, or insulting behavior toward an NPC buyer or seller.</p> 
+   <h4><a name="TOC-Step-3:-Determine-Undercut"></a>Step 3: Determine Undercut</h4> 
+   <p>The Undercut Percentage is a portion of the item&#8217;s price or value used to determine the buyer&#8217;s Initial and Final Offers.</p> 
+   <p>To determine the Undercut Percentage, have the buyer attempt a <a href="bluff">Bluff</a> check opposed by the seller&#8217;s <a href="sense-motive">Sense Motive</a> check. The Undercut Percentage is 2%, plus 1% for every point by which the <a href="bluff">Bluff</a> check exceeds the <a href="sense-motive">Sense Motive</a> check (minimum 0%).</p> 
+   <h4><a name="TOC-Step-4:-Set-Offers"></a>Step 4: Set Offers</h4> 
+   <p>The Initial Offer is the buyer&#8217;s first counteroffer to the seller&#8217;s Asking Price. The Final Offer is the largest amount the buyer is willing to pay. Though the seller and buyer negotiate back and forth, the buyer won&#8217;t exceed this offer. For example, if the seller&#8217;s Asking Price is 1,000 gp, the buyer&#8217;s Initial Offer may be 800 gp and the Final Offer 900 gp. These offers are determined by how much the buyer thinks the item is worth compared to the seller&#8217;s Asking Price.</p> 
+   <ul> 
+    <li><b>Fair (<a href="appraise">Appraise</a> or <a href="sense-motive">Sense Motive</a>)</b>: If the seller&#8217;s Asking Price is less than or equal to the amount that the buyer thinks the item is worth, subtract the Undercut Percentage from the seller&#8217;s price to get the Final Offer, and subtract 2 × the Undercut Percentage to get the Initial Offer.</li> 
+    <li><b>Unfair (<a href="appraise">Appraise</a>)</b>: If the result of the buyer&#8217;s <a href="appraise">Appraise</a> check leads her to believe the item is worth less than the seller&#8217;s Asking Price, subtract the Undercut Percentage from the buyer&#8217;s estimate of the item&#8217;s value to get the Final Offer, and subtract 2 × the Undercut Percentage to get the Initial Offer.</li> 
+    <li><b>Unfair (<a href="sense-motive">Sense Motive</a>)</b>: If the result of the buyer&#8217;s <a href="appraise">Appraise</a> check leads her to believe the seller&#8217;s Asking Price is too high, subtract 2 × the Undercut Percentage from the seller&#8217;s Asking Price to get the Final Offer, and subtract 4 × the Undercut Percentage to get the Initial Offer.</li> 
+   </ul> 
+   <h4><a name="TOC-Step-5:-Bargain"></a>Step 5: Bargain</h4> 
+   <p>The buyer begins bargaining by countering the seller&#8217;s price with her Initial Offer. This step repeats until the buyer and seller agree on a price or one side ends negotiations.</p> 
+   <ul> 
+    <li><b>Counteroffer Is Less Than Final Offer</b>: If the seller counters with a price that is less than the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (DC 15 + the buyer&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer accepts the seller&#8217;s counteroffer and buys the item. Failure means the buyer holds at her Initial Offer. The seller can try again, but the Diplomacy check DC increases by 5 unless the seller lowers his price.</li> 
+    <li><b>Counteroffer Equals Final Offer</b>: If the seller counters with a price that is the same as the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (20 + the buyer&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer accepts the seller&#8217;s counteroffer and buys the item. Failure means the buyer counteroffers at a price between the Initial Offer and the Final Offer. The seller can try again, but the Diplomacy DC increases by 5 unless the seller lowers his price.</li> 
+    <li><b>Counteroffer Exceeds Final Offer</b>: If the seller counters with a price higher than the buyer&#8217;s Final Offer, have the seller attempt a Diplomacy check (25 + the buyer&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). Success means the buyer counteroffers at a price between the Initial Offer and the Final Offer. Failure means the buyer holds at her Initial Offer. Failure by 5 or more means the buyer is insulted and lowers her offer or refuses to deal with the seller. The seller can try again, but the Diplomacy DC increases by 5 unless the seller lowers his price.</li> 
+   </ul> 
+  </div> 
+  <h3><a name="TOC-Example"></a>Example</h3> 
+  <p>Orshok has a jeweled idol worth 1,800 gp he mistakenly appraised at 2,000 gp. He tries to sell it to an art collector at an Asking Price of 2,200 gp, knowing the collector will counter with a lower price. The collector succeeds at her <a href="appraise">Appraise</a> check and realizes the idol&#8217;s actual value. The collector attempts a <a href="bluff">Bluff</a> check against Orshok&#8217;s <a href="sense-motive">Sense Motive</a> check and succeeds by 1, so her Undercut Percentage is 3% (base 2% plus 1% for exceeding the check by 1). Because the collector thinks the idol is worth less than Orshok&#8217;s price, her Initial Offer is 6% less than her estimate of the value (1,692 gp) and her Final Offer is 3% less than her estimate (1,746 gp). When she makes her Initial Offer, Orshok counters with a price of 2,000 gp. This is higher than the collector&#8217;s Final Offer, so Orshok attempts a Diplomacy check whose DC equals 25 + the buyer&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier to keep the buyer&#8217;s interest. He succeeds at the check, so the buyer counteroffers 1,740 gp (between her Initial and Final Offers). Orshok doesn&#8217;t think the collector will go much higher, and decides to find another buyer.</p> 
+  <p>Later, Orshok tries to sell the idol to a spice merchant who finds it interesting but knows nothing about art. Orshok again starts with a price of 2,200 gp. The merchant&#8217;s <a href="sense-motive">Sense Motive</a> check beats Orshok&#8217;s <a href="bluff">Bluff</a> check, so she realizes he isn&#8217;t offering a fair price. The merchant attempts a <a href="bluff">Bluff</a> check opposed by Orshok&#8217;s <a href="sense-motive">Sense Motive</a> check and succeeds by 4, which makes her Undercut Percentage 6% (base 2% plus 4% for exceeding the check by 4). The merchant&#8217;s Initial Offer is 12% less than Orshok&#8217;s price (1,936 gp), and her Final Offer is 6% less than Orshok&#8217;s price (2,068 gp). Orshok counters with a price of 2,000 gp. This is less than the merchant&#8217;s Final Offer, so Orshok attempts a Diplomacy check (DC 15 + the buyer&#8217;s <a href="http://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-">Charisma</a> modifier). He succeeds, so the merchant accepts Orshok&#8217;s counteroffer and buys the item for 2,000 gp.</p> 
+  <h3><a name="TOC-Collector-NPCs"></a>Collector NPCs</h3> 
+  <p>The GM can define a few NPCs as collectors, traders, or antiquarians interested in unusual items PCs collect after their adventures. If the PCs establish an amiable relationship with these collectors over time, the GM can reduce the base Undercut Percentage to 1% or even 0%, especially if the PCs&#8217; offerings cater to the NPCs&#8217; interests. Likewise, PCs may develop bad blood with one or more buyers; such buyers&#8217; Undercut Percentage may rise to 5% or higher, or the buyers may refuse to bargain with the PCs at all.</p> 
+  <h3><a name="TOC-Flooding-The-Market"></a>Flooding The Market</h3> 
+  <p>When PCs attempt to sell multiples of a durable good, the GM may lower the offered prices by 10% or more to reflect market saturation in that location. For example, a border town patrolled by guards with crossbows can always use more +1 bolts, but has limited use for a wagonload of masterwork spiked chains, so the Initial and Final Offers for the spiked chains would be 10% lower.</p> 
+  <h3><a name="TOC-Trade-Goods"></a>Trade Goods</h3> 
+  <p>Trade goods are exempt from bargaining, even in extraordinary circumstances.</p> 
+  <h3><a name="TOC-Using-Magic-to-Bargain"></a>Using Magic to Bargain</h3> 
+  <p>An unscrupulous character may use magic to charm or dupe buyers into accepting inflated prices. Something as simple as <a class="spell" href="http://www.d20pfsrd.com/magic/all-spells/c/charm-person">charm person</a> can alter the Diplomacy and <a href="sense-motive">Sense Motive</a> DCs by 5 in the spellcaster&#8217;s favor for an entire negotiation, and a specific suggestion can alter the result on a single roll by 10 in the caster&#8217;s favor. If the buyer later realizes that magic influenced the negotiation, she may refuse to deal with the spellcaster and attempt to get her money back, or at least report the spellcaster to the local authorities.</p> 
+
+
+
+
+
+
+  <script src="./js/what-input.js"></script>
+  <script src="./js/foundation.js"></script>
+</body>
+
+</html>
