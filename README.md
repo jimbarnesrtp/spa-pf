@@ -1,6 +1,6 @@
-# spa
+# spa-pf
 
-> A Vue.js project
+> A Vue.js project for pathfinder rules
 
 ## Build Setup
 
