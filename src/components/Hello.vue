@@ -2,8 +2,9 @@
   <div class="hello">
     Welcome to the Pathfinder tools
     <div>
-			Section 15: Copyright Notice See this <a href="/ogl.html">page</a> for more information on copyright, and ogl compliance
-		</div> 
+			Section 15: Copyright Notice See this <a href="/ogl.html">page</a> for more information on copyright, and ogl compliance<br/>
+		  Pathfinder Roleplaying Game Databases. Copyright 2011 Mike Chopswil, d20pfsrd.com located here <a href="http://www.pathfindercommunity.net/home/databases">http://www.pathfindercommunity.net/home/databases</a>
+    </div> 
   </div>
 </template>
 
