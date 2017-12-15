@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="medium-2">
+            <div class="medium-2" style="text-align:left">
                 <div>
                     <span v-for="feat in currentFeats" v-if="currentFeats.length > 0" v-on:click="loadFeat(feat)">{{feat.name}}-{{feat.type}} <br/></span>
                 </div>

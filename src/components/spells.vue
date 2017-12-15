@@ -23,7 +23,7 @@
           </select>
         </div>
   </div>
-  <div class="row" style="text-align:left;">
+  <div class="row" style="text-align:left;" >
     <div class="medium-2" v-for="(entry, index) in currentSpells" v-if="entry.length > 0">
       <div >
         <b v-on:click="expandSpells(index)">Spell Level {{index}}</b><br/>
@@ -36,7 +36,7 @@
     </div>
   </div>	
   <div class="row">
-    <div class="medium-2">
+    <div class="medium-2" style="text-align:left">
         <div>
           <span v-for="spell in filterSpells" v-if="filterSpells.length > 0" v-on:click="loadSpell(spell)">{{spell.name}} <br/></span>
         </div>
@@ -120,6 +120,7 @@ export default {
   },
   methods: {
     changeSpells: function () { 
+      this.filterSpells = [];
     	this.currentSpells = []; 
       var n = 11;
       for (var i = 0; i < n; i++)
@@ -154,6 +155,7 @@ export default {
       this.schools.sort();
     },
     filterBySchool: function() {
+      this.currentSpells = [];
       this.filterSpells = []; 
       var arrayLength = this.spells.length;
 		    for (var i = 0; i < arrayLength; i++) {        
@@ -164,6 +166,7 @@ export default {
         this.filterSpells.sort(function(a, b){return sortSpells(a,b)});
     },
     filterSpellList: function () { 
+      this.currentSpells = [];
       this.filterSpells = []; 
       if(this.filterSpellName) {
         var arrayLength = this.spells.length;
