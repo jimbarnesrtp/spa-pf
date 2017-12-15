@@ -14,7 +14,7 @@
                     <span v-for="feat in currentFeats" v-if="currentFeats.length > 0" v-on:click="loadFeat(feat)">{{feat.name}}-{{feat.type}} <br/></span>
                 </div>
             </div>
-            <div class="medium-10" v-if="chosenFeat">
+            <div class="medium-10" v-if="chosenFeat" style="text-align:left">
                 <b>Name:</b> {{chosenFeat.name}} <br/>
                 <b>Type:</b> {{chosenFeat.type}} <br/>
                 <span v-if="chosenFeat.description"><b>Description:</b> {{chosenFeat.description}}<br/></span>

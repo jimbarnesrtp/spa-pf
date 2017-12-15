@@ -126,6 +126,7 @@ import Skills from './components/Skills'
 import Init from './components/Init'
 import MagicItems from './components/magic-items'
 import Monsters from './components/monsters'
+import All from './components/all'
 //define your routes
 const routes = [
 //route for the home route of the web page
@@ -137,7 +138,8 @@ const routes = [
 { path: '/umr', component: UMR },
 { path: '/init', component: Init },
 { path: '/magic-items', component: MagicItems },
-{ path: '/monsters', component: Monsters }
+{ path: '/monsters', component: Monsters },
+{ path: '/all', component: All }
 ]
 
 // Create the router instance and pass the `routes` option

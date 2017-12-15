@@ -41,7 +41,7 @@
           <span v-for="spell in filterSpells" v-if="filterSpells.length > 0" v-on:click="loadSpell(spell)">{{spell.name}} <br/></span>
         </div>
     </div>
-    <div class="medium-10" v-if="filterSpell">
+    <div class="medium-10" v-if="filterSpell" style="text-align:left">
       <b>Name:</b> {{filterSpell.name}}<br/>
       <b>School:</b> {{filterSpell.school}} <span v-if="filterSpell.subschool"><b>Sub School:</b> {{filterSpell.subschool}}</span><br/>
       <span v-if="filterSpell.descriptor"><b>Descriptor:</b> {{filterSpell.descriptor}}<br/></span>

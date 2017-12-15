@@ -14,6 +14,7 @@
   <router-link v-bind:to="'/init'" class="button">INIT</router-link>
   <router-link v-bind:to="'/magic-items'" class="button">Magic Items</router-link>
   <router-link v-bind:to="'/monsters'" class="button">Monsters</router-link>
+  <router-link v-bind:to="'/all'" class="button">All</router-link>
   <router-view></router-view>
   </div>
 </template>

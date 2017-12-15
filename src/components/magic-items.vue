@@ -125,7 +125,7 @@ import axios from 'axios';
    
   },
   mounted() {
-    axios.get("./json/magicItems.json")
+    axios.get("./json/magicitems.json")
     .then(response => {this.items = response.data;
      this.populateSlots();
     })
