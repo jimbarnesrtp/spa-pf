@@ -2,15 +2,15 @@
 <div class="container" id="app">
   <div class="row">
     <div class="medium-3 column">
-        To display your spells please choose a class or filter by name or school
+        To display your spells please choose a class or filter by name or by school
         <select id="class" v-model="selected" @change="changeSpells()">
           <option value="">Please Choose a class</option>
-          <option  v-for="cclass in classes" v-bind:value="cclass.shortName"> {{ cclass.displayName }} </option>
+          <option :key="cclass.name" v-for="cclass in classes" v-bind:value="cclass.shortName"> {{ cclass.displayName }} </option>
         </select>
         </div>
     <div class="medium-3 column">
         <br>
-      <label>Start typing to search magic items
+      <label>Start typing to search Spells
         <input id="spellFilter" v-model="filterSpellName" type="text" placeholder="Spell Name"  v-on:keyup="filterSpellList()" @change="filterSpellList()"/>
       </label>
     </div>
@@ -19,16 +19,16 @@
           Pick a school to filter 
           <select id="class" v-model="schoolFilter" @change="filterBySchool()">
             <option value="">Filter by Slot</option>
-            <option  v-for="school in schools" v-bind:value="school"> {{ school }} </option>
+            <option  :key="school.name" v-for="school in schools" v-bind:value="school"> {{ school }} </option>
           </select>
         </div>
   </div>
   <div class="row" style="text-align:left;" >
-    <div class="medium-2" v-for="(entry, index) in currentSpells" v-if="entry.length > 0">
+    <div class="medium-2" :key="index" v-for="(entry, index) in currentSpells" v-if="entry.length > 0">
       <div >
         <b v-on:click="expandSpells(index)">Spell Level {{index}}</b><br/>
         <div :id="['spellLevel'+index]" style="display:none">
-          <div  class="spell" v-for="spell in entry" v-on:click="openModal(spell)">
+          <div  class="spell" :key="spell.name" v-for="spell in entry" v-on:click="openModal(spell)">
             {{spell.name}}
           </div>
         </div>
@@ -120,6 +120,7 @@ export default {
   },
   methods: {
     changeSpells: function () { 
+      this.filterSpellName = '';
       this.filterSpells = [];
     	this.currentSpells = []; 
       var n = 11;
@@ -146,6 +147,7 @@ export default {
       $(id).toggle()
     },
     populateSchools: function() {
+      
       var arrayLength = this.spells.length;
       for (var i=0; i < arrayLength; i++) {
         if(!this.schools.includes(this.spells[i].school.trim().toLowerCase())) {
@@ -155,6 +157,7 @@ export default {
       this.schools.sort();
     },
     filterBySchool: function() {
+      this.filterSpellName = '';
       this.currentSpells = [];
       this.filterSpells = []; 
       var arrayLength = this.spells.length;
@@ -166,6 +169,8 @@ export default {
         this.filterSpells.sort(function(a, b){return sortSpells(a,b)});
     },
     filterSpellList: function () { 
+      this.selected = '';
+      this.schoolFilter = '';
       this.currentSpells = [];
       this.filterSpells = []; 
       if(this.filterSpellName) {

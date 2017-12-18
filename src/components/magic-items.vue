@@ -75,6 +75,14 @@ var sortItems = function(a, b) {
     return 0;
   
 }
+
+
+var sortSlots = function(a, b) {
+   	if(a < b) return -1;
+    if(a > b) return 1;
+    return 0;
+  
+}
 import axios from 'axios';
  export default {
   name: 'magicItems',
@@ -90,6 +98,7 @@ import axios from 'axios';
   },
   methods: {
     filterItems: function () { 
+      this.slotSelected = '';
       this.currentItems = []; 
       if(this.itemFilter) {
         var arrayLength = this.items.length;
@@ -111,8 +120,10 @@ import axios from 'axios';
           this.slots.push(this.items[i].slot);
         }
       }
+      this.slots.sort(function(a, b){return sortSlots(a, b)});
     },
     filterBySlot: function() {
+      this.itemFilter =  '';
       this.currentItems = []; 
       var arrayLength = this.items.length;
 		    for (var i = 0; i < arrayLength; i++) {        
